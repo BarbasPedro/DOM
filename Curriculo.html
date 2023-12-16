@@ -55,7 +55,34 @@
 
         titleEl = document.querySelector("#person-name")
         titleEl.innerHTML = "Pedro Barbas"
-        titleEl.style.color = "green"
+        // titleEl.style.color = "green"
+
+        const subTitleEl = document.createElement("h2")
+        subTitleEl.innerHTML = "Projetos"
+        // = document.createElement("h2").innerHTML = "Projetos"
+
+        document.body.append(subTitleEl)
+
+        // Criação da lista de projetos 
+
+        const pjListEl = document.createElement("ul")
+            // = document.createElement("ul")
+            
+        const pjListItem1El = document.createElement("li")
+        pjListItem1El.innerHTML = "Ping-pong"
+            // = document.createElement("li").innerHTML = "Ping-pong"
+
+        const pjListItem2El = document.createElement("li")
+        pjListItem2El.innerHTML = "Calculadora"
+            // = document.createElement("li").innerHTML = "Calculadora"
+
+        const pjListItem3El = document.createElement("li")
+        pjListItem3El.innerHTML = "Gerador de Senhas"
+            // = document.createElement("li").innerHTML = "Gerador de Senhas"
+
+        pjListEl.append(pjListItem1El, pjListItem2El, pjListItem3El)
+
+        document.body.append(pjListEl)
     </script>
     
 </body>
