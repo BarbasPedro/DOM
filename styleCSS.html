@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .highlight {
+            color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Título da página</h1>
+    <button id="change-color"> Alterar cor </button>
+
+    <script>
+        /* ALTERANDO O ESTILO DE UM ELMENTO
+        
+        const titleEL = document.querySelector("#title")
+        
+        const buttonEl = document.querySelector('#change-color')
+        buttonEl.addEventListener("click", () => {
+            titleEL.style = "color: red; font-size: 55px"
+        }) */
+
+        // ALTERANDO A CLASSE DE UM ELEMENTO
+
+        const titleEL = document.querySelector("#title")
+        
+        const buttonEl = document.querySelector('#change-color')
+        buttonEl.addEventListener("click", () => {
+            /* if (titleEL.classList.contains("highlight")) {
+                    titleEL.classList.remove("highlight") }
+                else {
+                    titleEL.classList.add("highlight") }
+            */
+
+           titleEL.classList.toggle("highlight")
+        })
+    </script>
+</body>
+</html>
