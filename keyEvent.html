@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key down/Key up</title>
+</head>
+<body>
+    <input type="text">
+
+    <script>
+        const inputEL = document.querySelector("input[type=text]")
+            
+        inputEL.addEventListener("keydown", (event) => {
+                console.log("keydown", event, `${event.key} - ${event.keyCode}`)
+        
+            if (event.keyCode === 13) {
+                alert(`Tecla ENTER pressionada - ${inputEL.value}`)
+            }
+        })
+            /* inputEL.addEventListener("keyup", (event) => {
+             *    console.log("keyup")
+             * })
+             */
+    </script>
+</body>
+</html>
